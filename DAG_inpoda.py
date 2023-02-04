@@ -1,5 +1,4 @@
 import random
-import re
 import statistics
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
@@ -18,7 +17,8 @@ tweets_collection = db['versailles_tweets']
 
 def extract_hashtag(tweet):
     if "#" in tweet:
-        return re.findall(r"#(\w+)", tweet)
+        return ["test"]
+        #return re.findall(r"#(\w+)", tweet)
     else:
         return ["any"]
     
