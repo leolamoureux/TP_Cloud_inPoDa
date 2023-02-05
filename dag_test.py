@@ -6,6 +6,8 @@ from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
 from pymongo import MongoClient
 from textblob import TextBlob
+import nltk
+nltk.download('punkt')
 
 
 
