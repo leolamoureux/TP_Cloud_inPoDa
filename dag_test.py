@@ -60,7 +60,7 @@ default_args = {
 }
 
 dag = DAG(
-    'InPoDa',
+    'InPoDa_3_test',
     default_args=default_args,
     description='My WSDL calling DAG',
     schedule_interval=timedelta(days=1),
